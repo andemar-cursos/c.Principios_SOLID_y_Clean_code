@@ -1,3 +1,5 @@
+import localPost from './data/05-local-database.json';
+
 export class LocalDataBaseService {
   async getFakePosts() {
     return [
@@ -15,4 +17,11 @@ export class LocalDataBaseService {
       },
     ];
   }
+}
+
+
+export class JsonDatabaseService {
+    async getPost() {
+        return localPost;
+    }
 }
